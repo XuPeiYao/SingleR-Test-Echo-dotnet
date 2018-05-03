@@ -76,7 +76,7 @@ namespace SingleR_Test {
 
             app.UseSwagger(c => {
                 c.PreSerializeFilters.Add((swaggerDoc, httpReq) => {
-                    swaggerDoc.BasePath = "/signalr";
+                    //swaggerDoc.BasePath = "/signalr";
                 });
                 c.RouteTemplate = "swagger/api-docs/{documentName}/swagger.json";
             });
